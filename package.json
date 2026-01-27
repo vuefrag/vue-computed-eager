@@ -1,6 +1,6 @@
 {
   "name": "vue-computed-eager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eager computed",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
