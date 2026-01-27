@@ -1,0 +1,47 @@
+{
+  "name": "vue-computed-eager",
+  "version": "1.0.0",
+  "description": "Eager computed",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "composable",
+    "vueuse",
+    "computedEager"
+  ],
+  "author": "VueFrag",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuefrag/vue-computed-eager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vuefrag/vue-computed-eager/issues"
+  },
+  "homepage": "https://github.com/vuefrag/vue-computed-eager#readme",
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0",
+    "typescript": "^5.0.0",
+    "vue": "^3.4.0"
+  }
+}
