@@ -32,14 +32,15 @@ Learn more at [Vue: When a computed property can be the wrong tool](https://dev.
 - Use `computedEager()` when you have a simple operation, with a rarely changing return value – often a boolean.
 
 ```ts
-import { computedEager } from 'vue-computed-eager'
+import { ref } from 'vue';
+import { computedEager } from 'vue-computed-eager';
 
-const todos = ref([])
-const hasOpenTodos = computedEager(() => !!todos.length)
+const todos = ref([]);
+const hasOpenTodos = computedEager(() => !!todos.value.length);
 
-console.log(hasOpenTodos.value) // false
-toTodos.value.push({ title: 'Learn Vue' })
-console.log(hasOpenTodos.value) // true
+console.log(hasOpenTodos.value); // false
+todos.value.push({ title: 'Learn Vue' });
+console.log(hasOpenTodos.value); // true
 ```
 
 ## License
