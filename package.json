@@ -1,0 +1,55 @@
+{
+  "name": "vue-computed-eager",
+  "version": "1.0.17",
+  "description": "Vue 3 eager computed that evaluates immediately on dependency change",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "logo.svg",
+    "banner.svg",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "composition-api",
+    "composable",
+    "vueuse",
+    "eager",
+    "computed",
+    "immediate",
+    "non-lazy",
+    "sync",
+    "performance"
+  ],
+  "author": "VueFrag",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuefrag/vue-computed-eager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vuefrag/vue-computed-eager/issues"
+  },
+  "homepage": "https://github.com/vuefrag/vue-computed-eager#readme",
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0",
+    "typescript": "^5.0.0",
+    "vue": "^3.4.0"
+  }
+}
